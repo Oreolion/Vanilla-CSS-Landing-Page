@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 40px 60px;
+}
+
+header div {
+  height: 30px;
+}
+
+img {
+  height: 100%;
+}
+
+header button {
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: hsl(0, 100%, 63%);
+  border: hsl(0, 100%, 63%) solid 2px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding-top: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 5, 0.3);
+}
+
+.inner-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 2.1rem;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hero-section .texts p {
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: hsl(322, 100%, 66%);
+  padding: 20px 100px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 5, 0.3);
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.hero-section .mockbox {
+  width: 850px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 70px;
+}
+
+.mockbox img {
+  width: 100%;
+}
+
+.infobox {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 75px 60px;
+}
+
+.infobox h1 {
+  font-size: 3.2rem;
+  margin-bottom: 6px;
+}
+.info1 .infoimgbox,
+.info2 .infoimgbox {
+  width: 30px;
+}
+
+.info1 img,
+.info2 img {
+  width: 100%;
+}
+
+.top-main,
+.mid-main,
+.bottom-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0 20px 80px;
+}
+
+.top-main {
+  background: url(/images/bg-section-top-desktop-1.svg) no-repeat top right;
+}
+
+.bottom-main {
+  background: url(/images/bg-section-top-desktop-2.svg) no-repeat top right;
+}
+
+.top-main .text,
+.mid-main .text,
+.bottom-main .text {
+  max-width: 460px;
+  align-self: center;
+}
+
+.top-main .mockup,
+.mid-main .mockup,
+.bottom-main .mockup {
+  height: 300px;
+}
+
+.mockup img {
+  height: 100%;
+}
+
+.bottom-section {
+  margin-bottom: 40px;
+}
+
+.bottom-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer {
+  margin-top: 90px;
+  background: url(/images/bg-footer-top-desktop.svg) hsl(192, 100%, 9%);
+  color: hsl(207, 100%, 98%);
+}
+
+.in-footer {
+  display: flex;
+  margin: 0 40px;
+  padding: 50px 0 5px;
+  gap: 180px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.left-footer p,
+.right-footer p {
+  margin-bottom: 20px;
+}
+
+.right-footer input {
+  display: inline-block;
+  height: 35px;
+  width: 60%;
+  margin-right: 20px;
+}
+
+.right-footer button {
+  background-color: hsl(321, 100%, 78%);
+  padding: 10px 25px;
+  border-radius: 12px;
+  border: none;
+  width: 30%;
+}
+
+.logobox {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.logobox img {
+  height: 100%;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 40px 40px;
+  padding: 10px 0;
+}
+
+.contactphone,
+.contactemail {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.contactphone div,
+.contactemail div {
+  height: 20px;
+}
+
+.contactphone img,
+.contactemail img {
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .hero-section .mockbox {
+    width: 500px;
+    height: 400px;
+  }
+
+  .mockbox img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero-section .texts p {
+    font-size: 1.1rem;
+    max-width: 450px;
+  }
+
+  .infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info1,
+  .info2 {
+    margin-bottom: 40px;
+  }
+
+  .top-main,
+  .mid-main,
+  .bottom-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .main-section .text {
+    margin: 30px 0;
+  }
+
+  .in-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .right-footer {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .left-footer {
+    order: 2;
+  }
+}
